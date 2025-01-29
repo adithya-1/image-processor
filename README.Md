@@ -29,23 +29,6 @@
 - To view test input files for test go to `test_resources/input/`
 - To test for a better image use `test_resources/input/dubai.png`
 
-## Design changes done in the project
-### Below changes explain the design changes done from Assignment 4 to Assignment 5.
-- We didn't need to do much core design changes since the previous assignment due to MVC architecture, we could easily add new features and functionalities.
-- Added an additional package `compressors` to implement different compression techniques.
-- We added the newer features onto the Image interface due to the fact that this was being used throughout the program and extending to a new interface(for instance ImageWithAdditionalFeatures) would lead us using the new interface everywhere in the program. This would lead us to change existing code in other places(such as ImageMemory) even though the features added had no relation to these classes. So adding additional methods to the controller, service and model classes was the best approach.
-- The communication between the controller and the service was now changed from function arguments to `ImageProcessingRequest` object built on Builder pattern. This was done to provide easier way to add new command line arguments in the future without having to change the function signature everywhere. 
-- The services was a separate package before. This was moved inside controller after discussing with the professor to help with understanding that services is an extension to controller(MVCS architecture) that handles storing images.
-- There were few methods like filter operations which were called from service directly using filter utils, this led to a question on which methods goes to model and which method gets called directly from service which was an unnecessary decision the service had to make. It made sense to move all image operations(other than load/save) to the image model since it was responsible for handling the image data, hence replaced calling filters directly but through the model. 
-- A new controller was added to handle and understand the command line arguments by simply extending the existing(InteractiveImageProcessorController) controller and changing the processCommand to help with the processing command line input. 
-
-### Below changes explain the design changes done from Assignment 5 to Assignment 6.
-- The main function was handling parsing of arguments and creating a controller before. This responsibility is now delegated to ArgumentParser interface which takes in the arguments and initializes the controller.
-- We did not change the existing controller to handle GUI but added a new controller. Similarly we did not have to change the existing views but created a new view for GUI.
-- The controller is done differently because the GUI controller acts as a call back to the GUI view(GUIInput, GUIOutput) and making the existing controller(Interactive controller) work with it would meant having GUI view return inputs from GUI the way existing controller understands which meant unnecessary responsibility for the GUI view.
-- The GUI view was created differently from TextView due to different functions and responsibilities which is evident from the functions exposed in the interfaces.
-- No changes were done from the service layer till model layer since the design followed the MVCS architecture where new view was added easily without changing the core logic.
-
 ## Image Citation
 - Testing image for script `res/sample_input.png` was taken from [dummyimage.com](https://dummyimage.com/)
 - Testing image `test_resources/input/dubai.png` is our own photo and is authorized to be used in this project.
@@ -249,14 +232,3 @@ This project follows the Model-View-Controller (MVC) architecture, which helps i
 - The complete class diagram has classes,dependencies and methods to see the entire structure of the project.
   - location: res/complete_class_diagram.png
 - This was done to help better understand the structure of the project and how the classes are related to each other.
-
-5. **Extra Credit**:
-- We implemented 1 Extra Credit Image Downscaling. Since this was a new image processing feature we added a new method in the Image.java, ImageProcessingService.java and Features.java.  
-- We added this newer feature onto the Image interface due to the fact that this was being used throughout the program and extending to a new interface(for instance ImageWithAdditionalFeatures) would lead us using the new interface everywhere in the program. This would lead us to change existing code in other places(such as ImageMemory) even though the features added had no relation to these classes. So adding additional methods to the controller, service and model classes was the best approach.
-- Downscaling feature was done using the algorithm given in the assignment description. Refer 3.1 of: https://northeastern.instructure.com/courses/192553/assignments/2493533
-- This feature is tested in the GUIController test and is implemented only by GUIController.
-- Output of this image is in res/ folder
-- `res/sample_input.png` is the input image for this feature.
-- `res/downscaled_40_height_100_width.png` represents height at 40% and width at 100%.
-- `res/downscaled_60_height_60_width.png` represents height at 60% and width at 60%.
-- `res/downscaled_80_height_40_width.png` represents height at 80% and width at 40%.
