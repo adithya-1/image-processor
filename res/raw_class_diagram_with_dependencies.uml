@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/ishanrai/Desktop/Repos/cs5010-group/assignments/assignment6/src</OriginalElement>
+  <nodes>
+    <node x="1105.0125" y="-140.0">view.UserOutput</node>
+    <node x="1573.354348544973" y="164.0">controller.GUIImageProcessorController</node>
+    <node x="2723.1339285714284" y="282.0">compressors.HaarCompression</node>
+    <node x="2311.5839285714283" y="-62.0">exception.ImageProcessorException</node>
+    <node x="1460.854348544973" y="282.0">app.parsers.GUIArgumentParser</node>
+    <node x="1064.7625" y="-62.0">model.visual.Image</node>
+    <node x="1577.0" y="463.0">utility.StringUtils</node>
+    <node x="2428.9257771164016" y="390.0">factories.Factory</node>
+    <node x="3040.8526923500876" y="66.0">model.pixels.AbstractPixel</node>
+    <node x="1729.8543485449727" y="66.0">controller.services.FileImageProcessingService</node>
+    <node x="193.48352623456822" y="-62.0">view.text.TextOutput</node>
+    <node x="766.0" y="463.0">model.enumeration.CompressionType</node>
+    <node x="2227.5839285714283" y="66.0">view.components.FeatureComponent</node>
+    <node x="2944.991859567902" y="-62.0">model.pixels.Pixel</node>
+    <node x="793.7625000000003" y="-62.0">controller.ImageProcessorController</node>
+    <node x="444.5125000000003" y="66.0">controller.InteractiveImageProcessorController</node>
+    <node x="255.0" y="463.0">view.DisplayMessageType</node>
+    <node x="1311.7395971119925" y="66.0">view.gui.GUIInput</node>
+    <node x="1396.0" y="463.0">model.enumeration.ImageType</node>
+    <node x="1211.0" y="463.0">model.enumeration.FilterOption</node>
+    <node x="796.5125" y="66.0">app.parsers.ArgumentParser</node>
+    <node x="-35.0" y="463.0">model.request.ImageProcessingRequest</node>
+    <node x="1001.0" y="463.0">model.enumeration.UserCommand</node>
+    <node x="1273.2395971119925" y="164.0">view.gui.SwingInput</node>
+    <node x="495.34583333333353" y="-62.0">controller.ExecutionStatus</node>
+    <node x="-27.016473765431783" y="164.0">view.text.ConsoleInput</node>
+    <node x="-375.0" y="463.0">model.enumeration.LinearColorTransformationType</node>
+    <node x="-375.0" y="164.0">exception.ImageProcessingRunTimeException</node>
+    <node x="475.10434854497294" y="282.0">app.parsers.InteractiveArgumentParser</node>
+    <node x="823.7625" y="164.0">app.parsers.AbstractArgumentParser</node>
+    <node x="144.98352623456822" y="164.0">view.text.ConsoleOutput</node>
+    <node x="2692.3839285714284" y="164.0">compressors.Compression</node>
+    <node x="1105.7395971119925" y="66.0">model.memory.HashMapMemory</node>
+    <node x="3074.8526923500876" y="164.0">model.pixels.RGB</node>
+    <node x="1512.8772514329805" y="66.0">model.memory.StringMemory</node>
+    <node x="2044.7047508818332" y="-62.0">controller.Features</node>
+    <node x="1614.5839285714287" y="-62.0">model.memory.ImageMemory</node>
+    <node x="-23.270651455027064" y="282.0">app.parsers.CommandLineArgumentParser</node>
+    <node x="2774.1757771164016" y="66.0">utility.FilterUtils</node>
+    <node x="2531.1339285714284" y="282.0">model.visual.RenderedImage</node>
+    <node x="3058.5714285714284" y="282.0">utility.ExtractUtility</node>
+    <node x="330.9835262345682" y="164.0">controller.CommandLineImageProcessorController</node>
+    <node x="515.0" y="463.0">app.ImageProcessorApp</node>
+    <node x="1314.4835262345682" y="-62.0">controller.services.ImageProcessingService</node>
+    <node x="1752.0" y="463.0">model.enumeration.PixelType</node>
+    <node x="17.983526234568217" y="-62.0">view.text.TextInput</node>
+    <node x="2075.5839285714283" y="66.0">view.gui.GUIOutput</node>
+    <node x="2200.7089285714283" y="164.0">view.gui.SwingOutput</node>
+    <node x="2653.1757771164016" y="66.0">utility.IOUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="app.parsers.InteractiveArgumentParser" target="controller.InteractiveImageProcessorController" relationship="CREATE">
+      <point x="32.125" y="-14.0" />
+      <point x="635.7293485449729" y="242.0" />
+      <point x="702.4835262345682" y="242.0" />
+      <point x="702.4835262345682" y="144.0" />
+      <point x="693.5125000000003" y="144.0" />
+      <point x="83.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="-81.60000000000002" y="-14.0" />
+      <point x="1481.2543485449728" y="262.0" />
+      <point x="1024.5958333333333" y="262.0" />
+      <point x="80.33333333333326" y="14.0" />
+    </edge>
+    <edge source="model.memory.HashMapMemory" target="model.visual.Image" relationship="TO_MANY">
+      <point x="-46.5" y="-14.0" />
+      <point x="1152.2395971119925" y="-14.0" />
+      <point x="1137.5125" y="-14.0" />
+      <point x="24.25" y="14.0" />
+    </edge>
+    <edge source="controller.services.FileImageProcessingService" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="88.66666666666667" y="-14.0" />
+      <point x="1951.5210152116397" y="36.0" />
+      <point x="2365.369642857143" y="36.0" />
+      <point x="-71.71428571428572" y="14.0" />
+    </edge>
+    <edge source="app.parsers.InteractiveArgumentParser" target="view.text.ConsoleInput" relationship="CREATE">
+      <point x="-96.375" y="-14.0" />
+      <point x="507.22934854497294" y="222.0" />
+      <point x="86.98352623456822" y="222.0" />
+      <point x="38.0" y="14.0" />
+    </edge>
+    <edge source="compressors.HaarCompression" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="2817.1339285714284" y="252.0" />
+      <point x="2854.8839285714284" y="252.0" />
+      <point x="2854.8839285714284" y="124.0" />
+      <point x="2642.6757771164016" y="124.0" />
+      <point x="2642.6757771164016" y="36.0" />
+      <point x="2508.7982142857145" y="36.0" />
+      <point x="71.71428571428578" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="controller.ExecutionStatus" relationship="CREATE">
+      <point x="-27.666666666666686" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.pixels.AbstractPixel" target="model.pixels.Pixel" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="3116.8526923500876" y="36.0" />
+      <point x="3004.804359567902" y="36.0" />
+      <point x="16.3125" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingInput" target="view.gui.GUIInput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-29.5" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="48.44444444444446" y="-14.0" />
+      <point x="2531.870221560846" y="370.0" />
+      <point x="3232.5401923500876" y="370.0" />
+      <point x="3232.5401923500876" y="16.0" />
+      <point x="3026.554359567902" y="16.0" />
+      <point x="38.0625" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="79.7142857142857" y="-14.0" />
+      <point x="1792.5686342592585" y="134.0" />
+      <point x="2059.3339285714283" y="134.0" />
+      <point x="2059.3339285714283" y="46.0" />
+      <point x="2401.2267857142856" y="46.0" />
+      <point x="-35.85714285714289" y="14.0" />
+    </edge>
+    <edge source="controller.services.FileImageProcessingService" target="controller.services.ImageProcessingService" relationship="REALIZATION">
+      <point x="-88.66666666666669" y="-14.0" />
+      <point x="1774.1876818783062" y="-4.0" />
+      <point x="1514.4835262345682" y="-4.0" />
+      <point x="80.0" y="14.0" />
+    </edge>
+    <edge source="utility.IOUtils" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="25.25" y="-14.0" />
+      <point x="2728.9257771164016" y="16.0" />
+      <point x="2950.429359567902" y="16.0" />
+      <point x="-38.0625" y="14.0" />
+    </edge>
+    <edge source="utility.ExtractUtility" target="model.pixels.RGB" relationship="CREATE">
+      <point x="-37.5" y="-14.0" />
+      <point x="3096.0714285714284" y="262.0" />
+      <point x="3116.8526923500876" y="262.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="view.text.TextOutput" relationship="TO_ONE">
+      <point x="-83.00000000000003" y="-14.0" />
+      <point x="527.5125000000003" y="36.0" />
+      <point x="296.9835262345682" y="36.0" />
+      <point x="34.5" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="controller.services.ImageProcessingService" relationship="TO_ONE">
+      <point x="-39.85714285714286" y="-14.0" />
+      <point x="1672.99720568783" y="114.0" />
+      <point x="1472.854348544973" y="114.0" />
+      <point x="1472.854348544973" y="-4.0" />
+      <point x="1434.4835262345682" y="-4.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="2483.4257771164016" y="330.0" />
+      <point x="2437.0839285714283" y="330.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="138.33333333333334" y="-14.0" />
+      <point x="748.8458333333335" y="26.0" />
+      <point x="2329.5125" y="26.0" />
+      <point x="-107.57142857142856" y="14.0" />
+    </edge>
+    <edge source="compressors.HaarCompression" target="compressors.Compression" relationship="REALIZATION">
+      <point x="-62.66666666666666" y="-14.0" />
+      <point x="2754.467261904762" y="252.0" />
+      <point x="2768.3839285714284" y="252.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.ConsoleOutput" target="view.text.TextOutput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-34.5" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="controller.CommandLineImageProcessorController" relationship="CREATE">
+      <point x="57.200000000000045" y="-14.0" />
+      <point x="176.92934854497298" y="242.0" />
+      <point x="511.4835262345682" y="242.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.pixels.RGB" target="model.pixels.AbstractPixel" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="model.visual.Image" relationship="REALIZATION">
+      <point x="-68.79999999999995" y="-14.0" />
+      <point x="2548.3339285714287" y="242.0" />
+      <point x="1084.7625" y="242.0" />
+      <point x="1084.7625" y="-14.0" />
+      <point x="1089.0125" y="-14.0" />
+      <point x="-24.25" y="14.0" />
+    </edge>
+    <edge source="model.memory.StringMemory" target="model.memory.ImageMemory" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="1592.3772514329805" y="16.0" />
+      <point x="1686.5839285714287" y="16.0" />
+      <point x="-24.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="model.visual.RenderedImage" relationship="CREATE">
+      <point x="12.111111111111086" y="-14.0" />
+      <point x="2495.5368882275125" y="340.0" />
+      <point x="2617.1339285714284" y="340.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingOutput" target="view.components.FeatureComponent" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="2275.7089285714283" y="144.0" />
+      <point x="2277.3339285714283" y="144.0" />
+      <point x="-49.75" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="-34.39999999999998" y="-14.0" />
+      <point x="2582.733928571429" y="232.0" />
+      <point x="2508.861025683421" y="232.0" />
+      <point x="2508.861025683421" y="46.0" />
+      <point x="2472.9410714285714" y="46.0" />
+      <point x="35.85714285714289" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="view.text.ConsoleOutput" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="119.72934854497294" y="232.0" />
+      <point x="186.48352623456822" y="232.0" />
+      <point x="-41.5" y="14.0" />
+    </edge>
+    <edge source="view.gui.GUIOutput" target="view.UserOutput" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="2141.5839285714283" y="16.0" />
+      <point x="2173.204750881833" y="16.0" />
+      <point x="2173.204750881833" y="-87.0" />
+      <point x="1210.0125" y="-87.0" />
+      <point x="35.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.InteractiveArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="96.375" y="-14.0" />
+      <point x="699.9793485449729" y="262.0" />
+      <point x="944.2625" y="262.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="34.39999999999998" y="-14.0" />
+      <point x="2651.5339285714285" y="262.0" />
+      <point x="2628.1339285714284" y="262.0" />
+      <point x="2628.1339285714284" y="144.0" />
+      <point x="2918.6757771164016" y="144.0" />
+      <point x="2918.6757771164016" y="46.0" />
+      <point x="2983.054359567902" y="46.0" />
+      <point x="-5.4375" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="view.gui.GUIInput" relationship="TO_ONE">
+      <point x="-79.71428571428572" y="-14.0" />
+      <point x="1633.1400628306872" y="124.0" />
+      <point x="1400.2395971119925" y="124.0" />
+      <point x="29.5" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="view.text.ConsoleInput" relationship="CREATE">
+      <point x="-57.19999999999993" y="-14.0" />
+      <point x="62.52934854497289" y="262.0" />
+      <point x="10.983526234568217" y="262.0" />
+      <point x="-38.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="controller.services.FileImageProcessingService" relationship="CREATE">
+      <point x="-12.111111111111086" y="-14.0" />
+      <point x="2471.3146660052907" y="340.0" />
+      <point x="1930.7047508818332" y="340.0" />
+      <point x="1930.7047508818332" y="114.0" />
+      <point x="1862.8543485449727" y="114.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.memory.HashMapMemory" target="model.memory.ImageMemory" relationship="REALIZATION">
+      <point x="46.5" y="-14.0" />
+      <point x="1245.2395971119925" y="6.0" />
+      <point x="1638.5839285714287" y="6.0" />
+      <point x="-72.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="model.memory.StringMemory" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="1562.854348544973" y="144.0" />
+      <point x="1592.3772514329805" y="144.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.components.FeatureComponent" target="controller.Features" relationship="TO_MANY">
+      <point x="0.0" y="-14.0" />
+      <point x="2327.0839285714283" y="6.0" />
+      <point x="2133.204750881833" y="6.0" />
+      <point x="29.5" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="app.parsers.InteractiveArgumentParser" relationship="CREATE">
+      <point x="-36.33333333333337" y="-14.0" />
+      <point x="2447.092443783068" y="360.0" />
+      <point x="603.6043485449729" y="360.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="model.pixels.RGB" relationship="CREATE">
+      <point x="36.33333333333337" y="-14.0" />
+      <point x="2519.759110449735" y="360.0" />
+      <point x="3219.0714285714284" y="360.0" />
+      <point x="3219.0714285714284" y="252.0" />
+      <point x="3144.8526923500876" y="252.0" />
+      <point x="28.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.InteractiveArgumentParser" target="view.text.ConsoleOutput" relationship="CREATE">
+      <point x="-32.125" y="-14.0" />
+      <point x="571.4793485449729" y="212.0" />
+      <point x="269.4835262345682" y="212.0" />
+      <point x="41.5" y="14.0" />
+    </edge>
+    <edge source="utility.IOUtils" target="exception.ImageProcessorException" relationship="CREATE">
+      <point x="-25.25" y="-14.0" />
+      <point x="2678.4257771164016" y="26.0" />
+      <point x="2544.655357142857" y="26.0" />
+      <point x="107.57142857142856" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="view.gui.SwingOutput" relationship="CREATE">
+      <point x="81.6" y="-14.0" />
+      <point x="1644.4543485449728" y="262.0" />
+      <point x="2275.7089285714283" y="262.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="view.gui.GUIOutput" relationship="TO_ONE">
+      <point x="119.57142857142856" y="-14.0" />
+      <point x="1832.4257771164016" y="144.0" />
+      <point x="2108.5839285714283" y="144.0" />
+      <point x="-33.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.AbstractArgumentParser" target="model.memory.HashMapMemory" relationship="CREATE">
+      <point x="60.25" y="-14.0" />
+      <point x="1004.5125" y="144.0" />
+      <point x="1198.7395971119925" y="144.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="controller.Features" relationship="REALIZATION">
+      <point x="39.85714285714283" y="-14.0" />
+      <point x="1752.7114914021158" y="124.0" />
+      <point x="2006.3543485449727" y="124.0" />
+      <point x="2006.3543485449727" y="16.0" />
+      <point x="2074.204750881833" y="16.0" />
+      <point x="-29.5" y="14.0" />
+    </edge>
+    <edge source="utility.FilterUtils" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="2835.6757771164016" y="26.0" />
+      <point x="2961.304359567902" y="26.0" />
+      <point x="-27.1875" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="model.pixels.Pixel" relationship="TO_MANY">
+      <point x="0.0" y="-14.0" />
+      <point x="2617.1339285714284" y="134.0" />
+      <point x="2907.6757771164016" y="134.0" />
+      <point x="2907.6757771164016" y="36.0" />
+      <point x="2972.179359567902" y="36.0" />
+      <point x="-16.3125" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="controller.services.ImageProcessingService" relationship="TO_ONE">
+      <point x="83.0" y="-14.0" />
+      <point x="693.5125000000003" y="-4.0" />
+      <point x="1354.4835262345682" y="-4.0" />
+      <point x="-80.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="model.memory.ImageMemory" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="1712.8543485449727" y="16.0" />
+      <point x="1734.5839285714287" y="16.0" />
+      <point x="24.0" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="controller.ImageProcessorController" relationship="REALIZATION">
+      <point x="27.666666666666657" y="-14.0" />
+      <point x="638.179166666667" y="-14.0" />
+      <point x="856.5125000000003" y="-14.0" />
+      <point x="-62.75" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="exception.ImageProcessingRunTimeException" relationship="CREATE">
+      <point x="-114.39999999999998" y="-14.0" />
+      <point x="5.329348544973072" y="262.0" />
+      <point x="-212.5" y="262.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="app.parsers.GUIArgumentParser" relationship="CREATE">
+      <point x="-24.22222222222217" y="-14.0" />
+      <point x="2459.2035548941794" y="350.0" />
+      <point x="1562.854348544973" y="350.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.services.FileImageProcessingService" target="model.memory.ImageMemory" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="1862.8543485449727" y="16.0" />
+      <point x="1782.5839285714287" y="16.0" />
+      <point x="72.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="controller.GUIImageProcessorController" relationship="CREATE">
+      <point x="40.80000000000001" y="-14.0" />
+      <point x="1603.654348544973" y="252.0" />
+      <point x="1712.8543485449727" y="252.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingOutput" target="view.components.FeatureComponent" relationship="CREATE">
+      <point x="50.0" y="-14.0" />
+      <point x="2325.7089285714283" y="144.0" />
+      <point x="2376.8339285714283" y="144.0" />
+      <point x="49.75" y="14.0" />
+    </edge>
+    <edge source="utility.ExtractUtility" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="37.5" y="-14.0" />
+      <point x="3171.0714285714284" y="262.0" />
+      <point x="3203.3526923500876" y="262.0" />
+      <point x="3203.3526923500876" y="26.0" />
+      <point x="3015.679359567902" y="26.0" />
+      <point x="27.1875" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="114.39999999999998" y="-14.0" />
+      <point x="234.1293485449728" y="252.0" />
+      <point x="863.9291666666668" y="252.0" />
+      <point x="-80.33333333333337" y="14.0" />
+    </edge>
+    <edge source="app.parsers.AbstractArgumentParser" target="app.parsers.ArgumentParser" relationship="REALIZATION">
+      <point x="-60.25" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.ConsoleInput" target="view.text.TextInput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-31.0" y="14.0" />
+    </edge>
+    <edge source="controller.CommandLineImageProcessorController" target="controller.InteractiveImageProcessorController" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="511.4835262345682" y="144.0" />
+      <point x="527.5125000000003" y="144.0" />
+      <point x="-83.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingOutput" target="view.gui.GUIOutput" relationship="REALIZATION">
+      <point x="-50.0" y="-14.0" />
+      <point x="2225.7089285714283" y="144.0" />
+      <point x="2174.5839285714283" y="144.0" />
+      <point x="33.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="controller.ImageProcessorController" relationship="REALIZATION">
+      <point x="-119.57142857142856" y="-14.0" />
+      <point x="1593.2829199735443" y="134.0" />
+      <point x="982.0125000000003" y="134.0" />
+      <point x="62.75" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="view.gui.SwingInput" relationship="CREATE">
+      <point x="-40.80000000000001" y="-14.0" />
+      <point x="1522.054348544973" y="252.0" />
+      <point x="1341.2395971119925" y="252.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="app.parsers.CommandLineArgumentParser" relationship="CREATE">
+      <point x="-48.44444444444446" y="-14.0" />
+      <point x="2434.9813326719573" y="370.0" />
+      <point x="119.72934854497294" y="370.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="compressors.HaarCompression" target="model.pixels.Pixel" relationship="CREATE">
+      <point x="62.66666666666663" y="-14.0" />
+      <point x="2879.8005952380954" y="252.0" />
+      <point x="3016.1132771164016" y="252.0" />
+      <point x="3016.1132771164016" y="46.0" />
+      <point x="2993.929359567902" y="46.0" />
+      <point x="5.4375" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="model.pixels.RGB" relationship="CREATE">
+      <point x="68.79999999999995" y="-14.0" />
+      <point x="2685.9339285714286" y="262.0" />
+      <point x="3088.8526923500876" y="262.0" />
+      <point x="-28.0" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="view.text.TextInput" relationship="TO_ONE">
+      <point x="-138.33333333333337" y="-14.0" />
+      <point x="472.1791666666668" y="46.0" />
+      <point x="110.98352623456822" y="46.0" />
+      <point x="31.0" y="14.0" />
+    </edge>
+    <edge source="factories.Factory" target="compressors.HaarCompression" relationship="CREATE">
+      <point x="24.22222222222217" y="-14.0" />
+      <point x="2507.647999338624" y="350.0" />
+      <point x="2817.1339285714284" y="350.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.TextOutput" target="view.UserOutput" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="262.4835262345682" y="-87.0" />
+      <point x="1140.0125" y="-87.0" />
+      <point x="-35.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3192032096330611" showDependencies="true" x="1657.5507796225725" y="283.6449685280985" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

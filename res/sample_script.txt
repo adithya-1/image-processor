@@ -1,0 +1,124 @@
+# This script processes an image using various operations.
+# It loads a sample image, applies several transformations, and saves the results.
+load res/sample_input.png sample-image
+save res/saved_sample_image.png sample-image
+
+# Apply various transformations
+# 1. Extract red component and save
+red-component sample-image sample-image-red-component
+save res/image_red_component.png sample-image-red-component
+
+# 2. Extract green component and save
+green-component sample-image sample-image-green-component
+save res/image_green_component.png sample-image-green-component
+
+# 3. Extract blue component and save
+blue-component sample-image sample-image-blue-component
+save res/image_blue_component.png sample-image-blue-component
+
+# 4. Horizontal flip and save
+horizontal-flip sample-image sample-image-h-flip
+save res/image_h_flip.png sample-image-h-flip
+
+# 5. Vertical flip and save
+vertical-flip sample-image sample-image-v-flip
+save res/image_v_flip.png sample-image-v-flip
+
+# 6. Brighten the image by 20 and save
+brighten 20 sample-image sample-image-brightened
+save res/image_brightened.png sample-image-brightened
+
+# 7. Darken the image by 20 and save
+brighten -20 sample-image sample-image-darkened
+save res/image_darkened.png sample-image-darkened
+
+# 8. Split RGB channels and save
+rgb-split sample-image sample-image-r-split sample-image-g-split sample-image-b-split
+save res/image_r_split.png sample-image-r-split
+save res/image_g_split.png sample-image-g-split
+save res/image_b_split.png sample-image-b-split
+
+# 9. Combine RGB channels and save
+rgb-combine combined-rgb-sample sample-image-r-split sample-image-g-split sample-image-b-split
+save res/combined_rgb_sample_image.png combined-rgb-sample
+
+# 10. Blur the image twice and save
+blur sample-image sample-image-blurred
+blur sample-image-blurred sample-image-blurred
+save res/image_blurred.png sample-image-blurred
+
+# 11. Sharpen the image twice and save
+sharpen sample-image sample-image-sharpened
+sharpen sample-image-sharpened sample-image-sharpened
+save res/image_sharpened.png sample-image-sharpened
+
+# 12. extract sepia component and save
+sepia sample-image sample-image-sepia
+save res/image_sepia.png sample-image-sepia
+
+# 13. extract value component and save
+value-component sample-image sample-image-value-component
+save res/image_value_component.png sample-image-value-component
+
+# 14. extract Luma component and save
+luma-component sample-image sample-image-luma-component
+save res/image_luma_component.png sample-image-luma-component
+
+# 15. extract Intensity and save
+intensity-component sample-image sample-image-intensity-component
+save res/image_intensity_component.png sample-image-intensity-component
+
+# 16. Compress the image by 90 and save
+compress 90 sample-image sample-image-compressed_90
+save res/image_compressed_90.png sample-image-compressed_90
+
+# 17. Color correct the image and save
+color-correct sample-image sample-image-color-corrected
+save res/image_color_corrected.png sample-image-color-corrected
+
+# 18. Level adjust the image and save
+levels-adjust 20 100 255 sample-image sample-image-level-adjusted
+save res/image_level_adjusted_mid100.png sample-image-level-adjusted
+
+# 20. Extract histogram and save
+histogram sample-image-compressed_90 sample-image-histogram_compressed
+histogram sample-image-color-corrected sample-image-histogram_color_corrected
+histogram sample-image-level-adjusted sample-image-histogram_level_adjust
+save res/image_histogram_compressed.png sample-image-histogram_compressed
+save res/image_histogram_color_corrected.png sample-image-histogram_color_corrected
+save res/image_histogram_level_adjust.png sample-image-histogram_level_adjust
+
+# 20. Blur the image with 50% split view and save
+blur sample-image sample-image-blurred split 50
+save res/image_blur_split_50.png sample-image-blurred
+
+# 21. Sharpen the image with 50% split view and save
+sharpen sample-image sample-image-sharpened split 50
+save res/image_sharpen_split_50.png sample-image-sharpened
+
+# 22. Red component save
+red-component sample-image sample-image-red-component
+save res/image_red_component_split_50.png sample-image-red-component
+
+# 23. Sepia component with 50% split view and save
+sepia sample-image sample-image-sepia split 50
+save res/image_sepia_split_50.png sample-image-sepia
+
+# 24. Color correct the image with 50% split view and save
+color-correct sample-image sample-image-color-corrected split 50
+save res/image_color_corrected_split_50.png sample-image-color-corrected
+
+# 25. Level adjust the image with 50% split view and save
+levels-adjust 20 100 255 sample-image sample-image-level-adjusted split 50
+save res/image_level_adjusted_split_50.png sample-image-level-adjusted
+
+# 26. Compress the image by 50 and save
+compress 50 sample-image sample-image-compressed_50
+save res/image_compressed_50.png sample-image-compressed_50
+
+# 27. Level adjust the image and save
+levels-adjust 20 30 255 sample-image sample-image-level-adjusted
+save res/image_level_adjusted_mid30.png sample-image-level-adjusted
+
+
+

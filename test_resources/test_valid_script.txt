@@ -1,0 +1,9 @@
+# This script processes an image using various operations.
+# It loads a sample image, applies several transformations, and saves the results.
+load test_resources/input/random.png sample-image
+save test_resources/output/saved_sample_image.png sample-image
+
+# Apply various transformations
+# 1. Extract red component and save
+red-component sample-image sample-image-red-component
+save test_resources/output/saved_sample_image_red_component.png sample-image-red-component

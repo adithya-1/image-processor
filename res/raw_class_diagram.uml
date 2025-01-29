@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/ishanrai/Desktop/Repos/cs5010-group/assignments/assignment6/src</OriginalElement>
+  <nodes>
+    <node x="611.5" y="215.0">view.UserOutput</node>
+    <node x="185.5" y="293.0">controller.GUIImageProcessorController</node>
+    <node x="737.0" y="522.0">compressors.HaarCompression</node>
+    <node x="337.470790378007" y="942.5670103092784">exception.ImageProcessorException</node>
+    <node x="-181.0" y="142.0">app.parsers.GUIArgumentParser</node>
+    <node x="-143.5" y="673.0">model.visual.Image</node>
+    <node x="692.0" y="1000.1838487972506">utility.StringUtils</node>
+    <node x="702.5" y="905.2525773195872">factories.Factory</node>
+    <node x="-181.0" y="522.0">model.pixels.AbstractPixel</node>
+    <node x="426.0" y="522.0">controller.services.FileImageProcessingService</node>
+    <node x="523.5" y="293.0">view.text.TextOutput</node>
+    <node x="17.0" y="897.0">model.enumeration.CompressionType</node>
+    <node x="862.8092783505156" y="332.0">view.components.FeatureComponent</node>
+    <node x="-148.5" y="444.0">model.pixels.Pixel</node>
+    <node x="-126.0" y="215.0">controller.ImageProcessorController</node>
+    <node x="-166.5" y="293.0">controller.InteractiveImageProcessorController</node>
+    <node x="4.5" y="1148.082474226804">view.DisplayMessageType</node>
+    <node x="242.0" y="673.0">view.gui.GUIInput</node>
+    <node x="44.0" y="997.4329896907216">model.enumeration.ImageType</node>
+    <node x="42.0" y="947.2164948453608">model.enumeration.FilterOption</node>
+    <node x="84.0" y="-14.0">app.parsers.ArgumentParser</node>
+    <node x="222.25" y="371.0">model.request.ImageProcessingRequest</node>
+    <node x="29.5" y="1097.8659793814431">model.enumeration.UserCommand</node>
+    <node x="233.0" y="751.0">view.gui.SwingInput</node>
+    <node x="413.470790378007" y="751.0">controller.ExecutionStatus</node>
+    <node x="36.0" y="751.0">view.text.ConsoleInput</node>
+    <node x="-35.5" y="846.7835051546392">model.enumeration.LinearColorTransformationType</node>
+    <node x="300.470790378007" y="991.9312714776632">exception.ImageProcessingRunTimeException</node>
+    <node x="43.0" y="142.0">app.parsers.InteractiveArgumentParser</node>
+    <node x="51.0" y="64.0">app.parsers.AbstractArgumentParser</node>
+    <node x="509.5" y="371.0">view.text.ConsoleOutput</node>
+    <node x="755.0" y="444.0">compressors.Compression</node>
+    <node x="16.0" y="522.0">model.memory.HashMapMemory</node>
+    <node x="-147.0" y="600.0">model.pixels.RGB</node>
+    <node x="222.0" y="522.0">model.memory.StringMemory</node>
+    <node x="266.0" y="215.0">controller.Features</node>
+    <node x="109.25" y="444.0">model.memory.ImageMemory</node>
+    <node x="320.0" y="142.0">app.parsers.CommandLineArgumentParser</node>
+    <node x="695.5" y="1047.6494845360821">utility.FilterUtils</node>
+    <node x="-181.0" y="751.0">model.visual.RenderedImage</node>
+    <node x="-376.0" y="751.0">utility.ExtractUtility</node>
+    <node x="-181.0" y="371.0">controller.CommandLineImageProcessorController</node>
+    <node x="68.5" y="-87.0">app.ImageProcessorApp</node>
+    <node x="439.0" y="444.0">controller.services.ImageProcessingService</node>
+    <node x="49.0" y="1047.6494845360824">model.enumeration.PixelType</node>
+    <node x="50.0" y="673.0">view.text.TextInput</node>
+    <node x="704.5" y="293.0">view.gui.GUIOutput</node>
+    <node x="695.5" y="371.0">view.gui.SwingOutput</node>
+    <node x="706.5" y="952.7182130584189">utility.IOUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controller.services.FileImageProcessingService" target="controller.services.ImageProcessingService" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.GUIArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-79.0" y="117.0" />
+      <point x="171.5" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.CommandLineArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="463.0" y="117.0" />
+      <point x="171.5" y="117.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.AbstractArgumentParser" target="app.parsers.ArgumentParser" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="controller.Features" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="compressors.HaarCompression" target="compressors.Compression" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.ConsoleOutput" target="view.text.TextOutput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.ConsoleInput" target="view.text.TextInput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.CommandLineImageProcessorController" target="controller.InteractiveImageProcessorController" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.pixels.RGB" target="model.pixels.AbstractPixel" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingOutput" target="view.gui.GUIOutput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.GUIImageProcessorController" target="controller.ImageProcessorController" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="325.0" y="268.0" />
+      <point x="-0.5" y="268.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.visual.RenderedImage" target="model.visual.Image" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.memory.StringMemory" target="model.memory.ImageMemory" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="301.5" y="497.0" />
+      <point x="205.25" y="497.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="controller.InteractiveImageProcessorController" target="controller.ImageProcessorController" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.GUIOutput" target="view.UserOutput" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="770.5" y="268.0" />
+      <point x="681.5" y="268.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.pixels.AbstractPixel" target="model.pixels.Pixel" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="app.parsers.InteractiveArgumentParser" target="app.parsers.AbstractArgumentParser" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.gui.SwingInput" target="view.gui.GUIInput" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="model.memory.HashMapMemory" target="model.memory.ImageMemory" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="109.0" y="497.0" />
+      <point x="205.25" y="497.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="view.text.TextOutput" target="view.UserOutput" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="592.5" y="268.0" />
+      <point x="681.5" y="268.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5266968325791855" showDependencies="false" x="399.5850515463917" y="412.5" />
+  <SelectedNodes>
+    <node>utility.FilterUtils</node>
+    <node>utility.StringUtils</node>
+    <node>factories.Factory</node>
+    <node>utility.IOUtils</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
